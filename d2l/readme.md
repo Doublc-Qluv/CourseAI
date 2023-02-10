@@ -1,5 +1,14 @@
 动手学习深度学习
 ====
+# 资料
+[官网：https://zh.d2l.ai/](https://zh.d2l.ai/)
+
+[Github: https://github.com/d2l-ai/d2l-zh](https://github.com/d2l-ai/d2l-zh)
+
+[d2l包源码](https://github.com/d2l-ai/d2l-zh/tree/master/d2l)
+
+[视频课程：B站](https://space.bilibili.com/1567748478/channel/seriesdetail?sid=358497)
+
 
 # 内容
 1. 深度学习基础
@@ -35,7 +44,7 @@
    2. BERT
 
 
-# 
+# 前置
 
 1. 注意广播机制所造成的需的结果的不匹配
    1. 从numpy过来的广播机制，当运算两个量维度不同时，在运算前会变为一样，再进行运算
