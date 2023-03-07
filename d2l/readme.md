@@ -15,11 +15,15 @@
    1. 线性神经网络
    2. 多层感知机
 2. 卷积神经网络
-   1. LeNet
-   2. AlexNet
-   3. VGG
-   4. Inception
-   5. Resnet
+   1. [**LeNet**](./23-LeNet.ipynb)
+   2. [**AlexNet**](./24-AlexNet.ipynb)
+   3. [**VGG**](./25-VGG.ipynb)
+   4. [*NiN*](./26-NiN.ipynb)
+   5. [GoogLeNet(**Inception**)](./27-GoogLeNet.ipynb)
+   6. [*BN*](./28-BN.ipynb)
+   7. [**Resnet**](./29-ResNet.ipynb)
+   8. [**DenseNet**](./31-DenseNet.ipynb)
+
 3. 循环神经网络
    1. RNN
    2. GRU
@@ -37,33 +41,9 @@
    2. 多GPU
    3. 分布式
 7. 计算机视觉
-   1. 目标检测
-   2. 语义分割
+   1. [图像增广](./36-image_augmentation.ipynb)
+   2. 目标检测
+   3. 语义分割
 8. 自然语言处理
    1. 词嵌入
    2. BERT
-
-
-# 前置
-
-1. 注意广播机制所造成的需的结果的不匹配
-   1. 从numpy过来的广播机制，当运算两个量维度不同时，在运算前会变为一样，再进行运算
-   ```python
-   a = torch.arange(3).reshape((3, 1))
-   b = torch.arange(3).reshape((1, 2))
-   a, b
-
-   # 得到
-   (tensor([[0],
-            [1],
-            [2]]),
-    tensor([[0,1]]))
-   ```
-   ```python
-   a + b
-
-   # 得到
-   tensor([[0, 1],
-           [1, 2],
-           [2, 3]])
-   ```
